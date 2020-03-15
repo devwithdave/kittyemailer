@@ -1,4 +1,4 @@
-import smtplib, email.utils, os
+import smtplib, email.utils
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from random import choice
@@ -47,6 +47,3 @@ def send_email(server, receiver_email):
     )
     server.quit()
 
-
-#password = os.environ.get('GMAIL')
-#send_email(server_login('kittyemailer@gmail.com',password),'kittyemailer@gmail.com')
